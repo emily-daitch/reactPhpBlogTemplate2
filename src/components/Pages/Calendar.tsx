@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Typography } from "@mui/material";
 
 export default function Calendar() {
+    // You can use these environment variable to provide a calendar and scheduling link, or you could remove this page from the site or change it's components.
     const calendar_link = process.env.GOOGLE_CALENDAR_LINK;
     const calendly_link = process.env.CALENDLY_SCHEDULE_LINK as string;
     console.log('calendar link', calendar_link);
