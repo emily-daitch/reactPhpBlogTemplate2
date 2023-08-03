@@ -1,6 +1,8 @@
 # reactPhpBlogTemplate2
 [reactPhpBlogTemplate](https://github.com/emily-daitch/reactPhpBlogTemplate/blob/live/README.md) without create-react-app
 
+This is a template for a blog site and portfolio combination. It's also a decent introduction to some web development concepts. This project uses React with the Matreial UI (MUI5) library for components and styling, and PHP for the backend. The site contains a home page for a personalized introduction and list of blog posts, which navigate to single pages for viewing blog posts individually. It also has a Contact Me, Resume, and Calendar/Scheduling page. I hope you like it.
+
 # Getting Started
 To get started, please download XAMPP (if you wish to develop changes locally with Apache and MySQL) and clone the main branch of this repository. You will need to clone the repository to C:/xampp/htdocs/reactPhpBlogTemplate2 or {Your xampp installation}/htdocs/{your repo name}, so best to clone *after* the installation.<br><br>
 Alternatively, you can set the environment variable LOCAL_DEV to false and use a hosting platform of your choice, I have chosen Hostinger.<br>
@@ -27,7 +29,6 @@ Work in progress
 
 [React docs](https://react.dev/learn)<br>
 [Hostinger](https://www.hostinger.com/)<br>
-[CanvasJS](https://canvasjs.com/)<br>
 [MUI5](https://mui.com/)<br>
 [PHP](https://www.php.net/docs.php)<br>
 [MySQL](https://www.mysql.com/)<br>
