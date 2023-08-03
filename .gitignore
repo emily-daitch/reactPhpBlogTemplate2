@@ -1,0 +1,5 @@
+node_modules
+.env
+.staging.env
+.dev.env
+static
