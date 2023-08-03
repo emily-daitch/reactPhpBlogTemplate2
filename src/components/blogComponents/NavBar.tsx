@@ -82,7 +82,7 @@ export default function NavBar() {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
-    const pages = ['Home', 'Contact', 'Resume', 'Calendar', 'Strava'];
+    const pages = ['Home', 'Contact', 'Resume', 'Calendar'];
 
     return (
         <>

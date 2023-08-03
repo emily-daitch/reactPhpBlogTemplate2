@@ -8,7 +8,6 @@ import SinglePost from '../blogComponents/SinglePost';
 const Resume = lazy(() => import(/* webpackChunkName: "resume" */ '../Pages/Resume'));
 const Calendar = lazy(() => import(/* webpackChunkName: "calendar" */ '../Pages/Calendar'));
 const Contact = lazy(() => import(/* webpackChunkName: "contact" */ '../Pages/Contact'));
-const Strava = lazy(() => import(/* webpackChunkName: "strava" */ '../Pages/Strava'));
 const Main = lazy(() => import(/* webpackChunkName: "home" */ '../Main'));
 const NotFound = lazy(() => import(/* webpackChunkName: "notfound" */ '../blogComponents/NotFound'));
 const NavBar = lazy(() => import(/* webpackChunkName: "navbar" */ '../blogComponents/NavBar'));
@@ -28,7 +27,6 @@ export function App() {
                     <Route path="/contact" element={<Contact />}/>
                     <Route path="/resume" element={<Resume />}/>
                     <Route path="/calendar" element={<Calendar />}/>
-                    <Route path="/strava" element={<Strava />}/>
                     <Route path=":slug" element={<SinglePost />}/>
                     <Route path="/404" element={<NotFound />}/>
                 </Routes>
