@@ -21,18 +21,18 @@ Work in progress
 
 # Resources
 
-[React docs](https://react.dev/learn)
-[Hostinger](https://www.hostinger.com/)
-[CanvasJS](https://canvasjs.com/)
-[MUI5](https://mui.com/)
-[PHP](https://www.php.net/docs.php)
-[MySQL](https://www.mysql.com/)
-[Original YouTube Guide by ZarxBinx (outdated for current implementations, but maybe useful)](https://www.youtube.com/watch?v=RQYpSfXUgn4)
-[XAMPP](https://www.apachefriends.org/download.html)
-[Webpack](https://webpack.js.org/)
-[env-cmd](https://www.npmjs.com/package/env-cmd)
-[babel](https://babeljs.io/)
-[nodejs](https://nodejs.org/)
-[npm](https://www.npmjs.com/)
-[nvm](https://www.npmjs.com/package/nvm)
-[yarn](https://yarnpkg.com/)
+[React docs](https://react.dev/learn)<br>
+[Hostinger](https://www.hostinger.com/)<br>
+[CanvasJS](https://canvasjs.com/)<br>
+[MUI5](https://mui.com/)<br>
+[PHP](https://www.php.net/docs.php)<br>
+[MySQL](https://www.mysql.com/)<br>
+[Original YouTube Guide by ZarxBinx (outdated for current implementations, but maybe useful)](https://www.youtube.com/watch?v=RQYpSfXUgn4)<br>
+[XAMPP](https://www.apachefriends.org/download.html)<br>
+[Webpack](https://webpack.js.org/)<br>
+[env-cmd](https://www.npmjs.com/package/env-cmd)<br>
+[babel](https://babeljs.io/)<br>
+[nodejs](https://nodejs.org/)<br>
+[npm](https://www.npmjs.com/)<br>
+[nvm](https://www.npmjs.com/package/nvm)<br>
+[yarn](https://yarnpkg.com/)<br>
