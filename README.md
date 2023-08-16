@@ -16,6 +16,9 @@ You will also need to clone the [backend]() repository and place the files withi
 We will be using XAMPP (Cross-Platform Apache MySQL PHP Perl) to host the PHP backend and React frontend (using Apache). You could also simply use XAMPP for PHP and webpack serve (yarn start) to host the frontend locally if that is your preference. It is faster, but less equivalent to what will ultimately be hosted "live". Either method of serving the frontend will ultimately interact with XAMPPs PHP instance for the locally hosted backend fucntionality.<br>
 -- Work in progress --
 
+# Populating the database with example/test posts
+There is a file in the root directory called .htaccess (you may need to make hidden files visible to see this). This is a configuration file that the Apache web server uses, and it directs requests to the index.html file so that the React application is served. In this file you will see a comment explaining how to comment a line which will cause requests to instead be routed to index.php. The index.php file has a commented line getPosts() which will get posts from https://jsonplaceholder.typicode.com/posts and save them to your databases posts table. Doing this will allow you to see how posts are displayed and how pagination works without having to create your own content. See the backend repository for instructions on setting up your database and tables.
+
 # Hosting with Hostinger
 Work in progress
 
