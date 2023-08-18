@@ -12,7 +12,7 @@ From here, we can use yarn build (or yarn build:staging) to create the index fil
 -- Work in progress --
 
 # Making changes locally with XAMPP
-You will also need to clone the [backend]() repository and place the files within the same xampp/htdocs/{repo} folder mentioned above. These PHP files will serve as the backend of the blog site. It is best practice to keep frontend and backend code separate (separation of concerns) and this also helps us avoid exposing access tokens on the frontend. You will notice the env files of this repository contain no secrets for external API access as those will be kept securely on the server side and accessed by the backend.<br><br>
+You will also need to clone the [backend](https://github.com/emily-daitch/reactPhpBlogTemplateBackend) repository and place the files within the same xampp/htdocs/{repo} folder mentioned above. These PHP files will serve as the backend of the blog site. It is best practice to keep frontend and backend code separate (separation of concerns) and this also helps us avoid exposing access tokens on the frontend. You will notice the env files of this repository contain no secrets for external API access as those will be kept securely on the server side and accessed by the backend.<br><br>
 We will be using XAMPP (Cross-Platform Apache MySQL PHP Perl) to host the PHP backend and React frontend (using Apache). You could also simply use XAMPP for PHP and webpack serve (yarn start) to host the frontend locally if that is your preference. It is faster, but less equivalent to what will ultimately be hosted "live". Either method of serving the frontend will ultimately interact with XAMPPs PHP instance for the locally hosted backend fucntionality.<br>
 -- Work in progress --
 
