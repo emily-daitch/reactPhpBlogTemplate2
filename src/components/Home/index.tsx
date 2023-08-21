@@ -73,11 +73,11 @@ export default function Home() {
             <Intro/>
                 <Grid container direction={'row'}>
                     {posts ? posts?.map(function({id, title, image}){
-                        return <Grid item xs={12} sm={6} lg={3}> <PostList key={id} id={id} title={title}
+                        return <Grid item key={id} xs={12} sm={6} lg={3}> <PostList key={id} id={id} title={title}
                             image={image}/> </Grid>;
                     }) : <></>}
                 </Grid>
-                <Pagination count={postsTotal/pageSize} page={currentPage} onChange={handleChange}/>
+                <Pagination count={Math.ceil(postsTotal/pageSize)} page={currentPage} onChange={handleChange}/>
         </Box>
     );
 }

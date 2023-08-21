@@ -15,7 +15,7 @@ export default function IntroEmily() {
             <p>You can find a guide to setting up your own project and hosting on the github&nbsp;
                 <Link href='https://github.com/emily-daitch/reactPhpBlogTemplate#readme' color='#345678'>README</Link>.</p>
             <p>The test posts you see exist so that enough content is here to demo the pagination on the home page.</p><br/>
-            <p>So far this site has support for: 
+            <p>So far this site has support for: </p>
                 <div className='List'>
                      -   paginated blog posts<br/>
                      -   resume page<br/>
@@ -23,7 +23,7 @@ export default function IntroEmily() {
                      -   calendar / scheduling page<br/>
                 </div>
                 <br/>
-                For fun I&apos;ve added an optional Strava page that serves as an example for presenting data from an external API&nbsp;
+                <p>For fun I&apos;ve added an optional Strava page that serves as an example for presenting data from an external API&nbsp;
                 <Link href='https://www.developers.strava.com/docs/reference/' color='#345678'>(Strava)</Link> using&nbsp;
                 <Link href='https://www.canvasjs.com' color='#345678'>CanvasJS charts</Link>.</p><br/>
 

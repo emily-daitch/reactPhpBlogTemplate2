@@ -6,7 +6,7 @@ import { slug } from '../../utils/slug';
 import Box from '@mui/material/Box'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-import Container from '@mui/material/Container'
+// import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
@@ -87,7 +87,6 @@ export default function NavBar() {
     return (
         <>
         <AppBar position="fixed" elevation={0}>
-          <Container maxWidth="xl">
             <Toolbar disableGutters>
               <Typography
                 variant="h6"
@@ -185,7 +184,7 @@ export default function NavBar() {
 
               <Box sx={{ flexGrow: 0 }}>
                   <a onClick={(e) => { if (window.innerWidth > 768) { e.preventDefault(); handleOpenDialog(); } }} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <IconButton sx={{ p: 0 }}>
+                    <IconButton sx={{ p: 0, marginRight: '15px' }}>
                       <Search />
                     </IconButton>
                   </a>
@@ -229,7 +228,6 @@ export default function NavBar() {
                 </DialogActions>
               </Dialog>
             </Toolbar>
-          </Container>
         </AppBar>
         <div style={{height: '70px'}}></div>
         </>
