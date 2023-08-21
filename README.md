@@ -19,9 +19,6 @@ We will be using XAMPP (Cross-Platform Apache MySQL PHP Perl) to host the PHP ba
 # Populating the database with example/test posts
 There is a file in the root directory called .htaccess (you may need to make hidden files visible to see this). This is a configuration file that the Apache web server uses, and it directs requests to the index.html file so that the React application is served. In this file you will see a comment explaining how to comment a line which will cause requests to instead be routed to index.php. The index.php file has a commented line getPosts() which will get posts from https://jsonplaceholder.typicode.com/posts and save them to your databases posts table. Doing this will allow you to see how posts are displayed and how pagination works without having to create your own content. See the backend repository for instructions on setting up your database and tables.
 
-# Hosting with Hostinger
-Work in progress
-
 # Webpack
 Create-react-app (CRA) uses webpack to bundle files for you automagically, and this is part of the execution when you run npm/yarn build/start (which under the hood, defined in package.json, calls the react app scripts). To get away from CRA, we have to handle this ourselves. In the repository you will find a webpack config file webpack.config.js which is used when we run npm/yarn build/start. You can see this is the package.json file, where under scripts, we call the webpack tool.
 
