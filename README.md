@@ -26,7 +26,7 @@ Work in progress
 Create-react-app (CRA) uses webpack to bundle files for you automagically, and this is part of the execution when you run npm/yarn build/start (which under the hood, defined in package.json, calls the react app scripts). To get away from CRA, we have to handle this ourselves. In the repository you will find a webpack config file webpack.config.js which is used when we run npm/yarn build/start. You can see this is the package.json file, where under scripts, we call the webpack tool.
 
 # Deployment
-Work in progress
+When you buy a domain (which you can do through Hostinger) and host a website at that domain through Hostinger, you will be able to manage the site through the Websites tab when logged in to Hostinger. This will bring you to a page where you can go to File Manager or Databases. File manager will bring you to a page where you can upload your build documents, similar to how when you develop locally you place the build files under the xampp/htdocs/project folder. You will need the static folder and root level index.html copied here, as well as the api folder from the backend repository. When you go to the Database manager, you will see an admin page very similar to what you saw when hosting locally with XAMPP and going to the MySQL admin page (phpMyAdmin). This is where you will setup your database credentials and tables.
 
 # Resources
 
