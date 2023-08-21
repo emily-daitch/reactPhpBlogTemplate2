@@ -23,7 +23,7 @@ There is a file in the root directory called .htaccess (you may need to make hid
 Work in progress
 
 # Webpack
-Work in progress
+Create-react-app (CRA) uses webpack to bundle files for you automagically, and this is part of the execution when you run npm/yarn build/start (which under the hood, defined in package.json, calls the react app scripts). To get away from CRA, we have to handle this ourselves. In the repository you will find a webpack config file webpack.config.js which is used when we run npm/yarn build/start. You can see this is the package.json file, where under scripts, we call the webpack tool.
 
 # Deployment
 Work in progress
