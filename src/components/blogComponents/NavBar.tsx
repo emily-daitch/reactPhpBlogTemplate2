@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { slug } from '../../utils/slug';
 
@@ -11,7 +12,7 @@ import Button from '@mui/material/Button'
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
-import { TextField, List, ListItem, Link } from "@mui/material";
+import { TextField, List, ListItem } from "@mui/material";
 import DialogActions from "@mui/material/DialogActions";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -197,6 +198,8 @@ export default function NavBar() {
                             margin="dense"
                             id="search"
                             label="Search Criteria"
+                            InputProps={{sx: { color: '#666666' }}}
+                            InputLabelProps={{sx: { color: '#666666' }}}
                             type="text"
                             fullWidth
                             variant="standard"
@@ -209,8 +212,9 @@ export default function NavBar() {
                             {searchResultItems.map(
                                 function(item: SearchResultItem)
                                     {
+                                        const linkSlug = slug(item.title);
                                         return (
-                                            <Link href={slug(item.title)} key={item.id}>
+                                            <Link to={linkSlug} state={item.id} key={item.id} style={{color: '#555555', fontFamily: 'verdana', textDecoration: 'none'}}>
                                                 <ListItem
                                                     key={item.id}>
                                                     {item.title}
