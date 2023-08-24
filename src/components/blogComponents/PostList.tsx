@@ -18,7 +18,7 @@ export default function PostList({id, title, image}: PostListInput) {
 
     return (
         <Box padding={'auto'} justifyContent={'center'} display={'flex'} marginBottom={'15px'}>
-            <Card>
+            <Card sx={{maxWidth: '200px'}}>
                 <Link to={slug(title)} state={id} color="#dddddd" style={{textDecoration:'none'}}>
                     <img height={'200px'} width={'200px'} src={image} alt={title}/>
                     <Typography textAlign={'center'} color={'#dddddd'}>{title}</Typography>
