@@ -1,17 +1,18 @@
 import * as React from "react";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { slug } from '../../utils/slug';
 
 import Box from '@mui/material/Box'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-import Container from '@mui/material/Container'
+// import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
-import { TextField, List, ListItem, Link } from "@mui/material";
+import { TextField, List, ListItem } from "@mui/material";
 import DialogActions from "@mui/material/DialogActions";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -82,12 +83,11 @@ export default function NavBar() {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
-    const pages = ['Home', 'Contact', 'Resume', 'Calendar'];
+    const pages = ['Home', 'Contact', 'Resume', 'Calendar', 'Strava'];
 
     return (
         <>
         <AppBar position="fixed" elevation={0}>
-          <Container maxWidth="xl">
             <Toolbar disableGutters>
               <Typography
                 variant="h6"
@@ -185,7 +185,7 @@ export default function NavBar() {
 
               <Box sx={{ flexGrow: 0 }}>
                   <a onClick={(e) => { if (window.innerWidth > 768) { e.preventDefault(); handleOpenDialog(); } }} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <IconButton sx={{ p: 0 }}>
+                    <IconButton sx={{ p: 0, marginRight: '15px' }}>
                       <Search />
                     </IconButton>
                   </a>
@@ -198,6 +198,8 @@ export default function NavBar() {
                             margin="dense"
                             id="search"
                             label="Search Criteria"
+                            InputProps={{sx: { color: '#666666' }}}
+                            InputLabelProps={{sx: { color: '#666666' }}}
                             type="text"
                             fullWidth
                             variant="standard"
@@ -210,8 +212,9 @@ export default function NavBar() {
                             {searchResultItems.map(
                                 function(item: SearchResultItem)
                                     {
+                                        const linkSlug = slug(item.title);
                                         return (
-                                            <Link href={slug(item.title)} key={item.id}>
+                                            <Link to={linkSlug} state={item.id} key={item.id} style={{color: '#555555', fontFamily: 'verdana', textDecoration: 'none'}}>
                                                 <ListItem
                                                     key={item.id}>
                                                     {item.title}
@@ -229,7 +232,6 @@ export default function NavBar() {
                 </DialogActions>
               </Dialog>
             </Toolbar>
-          </Container>
         </AppBar>
         <div style={{height: '70px'}}></div>
         </>
